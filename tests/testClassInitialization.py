@@ -28,7 +28,7 @@ for i in code:
             #exec(x)
             
 # todo: replace this with an actual test
-class TestCase(unittest.TestCase):
+class TestCase_(unittest.TestCase):
     def testClassInit(self):
       data = pd.read_csv("tests/files/assignment8Data.csv")
       x = data[['sex','age','educ','white']]

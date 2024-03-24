@@ -1,6 +1,10 @@
 import unittest
 import json
 import pandas as pd
+import numpy as np
+import sys as system
+import io
+import re
 
 with open("Lesson.ipynb", "r") as file:
     f_str = file.read()

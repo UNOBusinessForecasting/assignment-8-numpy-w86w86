@@ -17,9 +17,7 @@ si = {}
 for i in code:
     for j in i['source']:
         if "#si-exercise" in j:
-            python_code = "".join(i['source'])
-            compiled_code = compile(python_code, "<string>", "exec")
-            exec(compiled_code)
+            exec(compile("".join(i['source']), "<string>", "exec"))
 
 
 # todo: replace this with an actual test

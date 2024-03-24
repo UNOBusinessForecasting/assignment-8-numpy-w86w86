@@ -21,14 +21,14 @@ for i in code:
             compile("".join(i['source']), '<string>', 'exec')
             ##this is from previous TestCase => exec("".join(i['source']))
 
-            code_ = "".join(i['source'])
-            print(f'\n*************\nThis is the entire code:\n{code_}\n*******************\n')
+            #code_ = "".join(i['source'])
+            #print(f'\n*************\nThis is the entire code:\n{code_}\n*******************\n')
             ## v Souley test
             #x = compile(code_, 'file', 'exec')
             #exec(x)
             
 # todo: replace this with an actual test
-class TestCase_(unittest.TestCase):
+class TestCaseW(unittest.TestCase):
     def testClassInit(self):
       data = pd.read_csv("tests/files/assignment8Data.csv")
       x = data[['sex','age','educ','white']]

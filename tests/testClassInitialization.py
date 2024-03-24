@@ -21,8 +21,9 @@ for i in code:
             #compile("".join(i['source']), '<string>', 'exec')
             #this is from previous TestCase => exec("".join(i['source']))
 
+            code_ = "".join(i['source'])
             # v Souley test
-            x = compile("".join(i['source']), '<string>', 'exec')
+            x = compile(code_, 'file', 'exec')
             exec(x)
             
 

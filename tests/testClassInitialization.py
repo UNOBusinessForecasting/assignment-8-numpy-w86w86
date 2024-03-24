@@ -17,19 +17,16 @@ si = {}
 for i in code:
     for j in i['source']:
         if "#si-exercise" in j:
-            # v save original
-            #compile("".join(i['source']), '<string>', 'exec')
-            #this is from previous TestCase => exec("".join(i['source']))
+            ## v save original
+            compile("".join(i['source']), '<string>', 'exec')
+            ##this is from previous TestCase => exec("".join(i['source']))
 
-            code_ = "".join(i['source'])
-            print(f'This is the entire code: {code_}')
-            # v Souley test
-            x = compile(code_, 'file', 'exec')
-            exec(x)
+            #code_ = "".join(i['source'])
+            print(f'\n*************\nThis is the entire code:\n{code_}\n*******************\n')
+            ## v Souley test
+            #x = compile(code_, 'file', 'exec')
+            #exec(x)
             
-
-
-
 # todo: replace this with an actual test
 class TestCase(unittest.TestCase):
     def testClassInit(self):

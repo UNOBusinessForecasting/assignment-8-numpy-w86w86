@@ -17,8 +17,14 @@ si = {}
 for i in code:
     for j in i['source']:
         if "#si-exercise" in j:
-            compile("".join(i['source']), '<string>', 'exec')
-            #exec("".join(i['source']))
+            # v save original
+            #compile("".join(i['source']), '<string>', 'exec')
+            #this is from previous TestCase => exec("".join(i['source']))
+
+            # v Souley test
+            x = compile("".join(i['source']), '<string>', 'exec')
+            exec(x)
+            
 
 
 

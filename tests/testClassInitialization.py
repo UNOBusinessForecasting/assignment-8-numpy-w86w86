@@ -21,7 +21,7 @@ for i in code:
             compile("".join(i['source']), '<string>', 'exec')
             ##this is from previous TestCase => exec("".join(i['source']))
 
-            #code_ = "".join(i['source'])
+            code_ = "".join(i['source'])
             print(f'\n*************\nThis is the entire code:\n{code_}\n*******************\n')
             ## v Souley test
             #x = compile(code_, 'file', 'exec')
